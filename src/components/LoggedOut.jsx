@@ -8,7 +8,14 @@ export default function LoggedOut() {
         <nav className="nav container">
           <h1 className="text-display-3">KindeAuth</h1>
           <div>
-            <button className="btn btn-ghost sign-in-btn" onClick={login}>
+            <button
+              className="btn btn-ghost sign-in-btn"
+              onClick={() =>
+                login({
+                  app_state: { redirectTo: "/dashboard" },
+                })
+              }
+            >
               Sign in
             </button>
             <button className="btn btn-dark" onClick={register}>
