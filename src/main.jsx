@@ -6,11 +6,13 @@ import "./index.css";
 
 const handleRedirectCallback = (user, appState) => {
   console.log({ user, appState });
-  // if (appState?.redirectTo) {
-  //   window.location.href = appState.redirectTo;
-  // } else {
-  //   window.location.href = "/";
-  // }
+  if (appState?.redirectTo) {
+    console.log("Redirecting to", appState.redirectTo);
+    // window.location.href = appState.redirectTo;
+  } else {
+    console.log("Redirecting to /");
+    // window.location.href = "/";
+  }
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
