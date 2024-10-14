@@ -10,11 +10,7 @@ export default function LoggedOut() {
           <div>
             <button
               className="btn btn-ghost sign-in-btn"
-              onClick={() =>
-                login({
-                  // app_state: { redirectTo: "/dashboard" },
-                })
-              }
+              onClick={() => login()}
             >
               Sign in
             </button>
