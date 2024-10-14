@@ -12,7 +12,7 @@ export default function LoggedOut() {
               className="btn btn-ghost sign-in-btn"
               onClick={() =>
                 login({
-                  app_state: { redirectTo: "/dashboard" },
+                  // app_state: { redirectTo: "/dashboard" },
                 })
               }
             >
