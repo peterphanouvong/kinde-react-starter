@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       logoutUri={window.location.origin}
       redirectUri={window.location.origin}
       // onRedirectCallback={handleRedirectCallback}
-      isDangerouslyUseLocalStorage={true}
+      // isDangerouslyUseLocalStorage={true}
     >
       <App />
     </KindeProvider>
